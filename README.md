@@ -39,6 +39,8 @@ Project Organization
     │   ├── DataProcessing <- Scripts to download or generate data, process it and describe it.
     │   │   └── make_dataset.py
     │   │
+    │   ├── Evaluation     <- Evaluation model for every algorithm used   
+    │   │  
     │   ├── Features       <- Scripts to turn raw data into features for modeling
     │   │   └── build_features.py
     │   │
