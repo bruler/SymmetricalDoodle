@@ -34,11 +34,15 @@ Project Organization
     ├── Source             <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
+    │   ├── config.json    
+    │   │
     │   ├── DataProcessing <- Scripts to download or generate data, process it and describe it.
     │   │   └── make_dataset.py
     │   │
     │   ├── Features       <- Scripts to turn raw data into features for modeling
     │   │   └── build_features.py
+    │   │
+    │   ├── logfile
     │   │
     │   ├── Models         <- Scripts to define models
     │   │   ├── predict_model.py
