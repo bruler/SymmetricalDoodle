@@ -1,0 +1,34 @@
+ # one-line log
+ l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+ g = git
+
+ a = add
+ ap = add -p
+ c = commit --verbose
+ ca = commit -a --verbose
+ cm = commit -m
+ cam = commit -a -m
+ m = commit --amend --verbose
+
+ d = diff
+ ds = diff --stat
+ dc = diff --cached
+
+ s = status
+ co = checkout
+ cob = checkout -b
+ # list branches sorted by last modified
+ b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+ # list aliases
+ la = "!git config -l | grep alias | cut -c 7-"
+
+ #Push and Pull
+ pum = "pull origin master"
+ psm = "push origin master"
+ pud = "pull origin development"
+ psd = "push origin development"
+
+ #Chain add all, commit, pull and push
+ wow = "!func(){ git add . && git commit -am \"$1\" && git pull --no-progress && git push; }; func"
